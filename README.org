@@ -1,0 +1,26 @@
+* Requirements
+
+#+begin_src ini :tangle requirements.txt
+fastapi[standard]>=0.113.0,<0.114.0
+pydantic>=2.7.0,<3.0.0
+sqlmodel>=0.0.22
+#+end_src
+
+#+begin_src ini :tangle requirements-dev.txt
+fastapi[standard]>=0.113.0,<0.114.0
+pydantic>=2.7.0,<3.0.0
+sqlmodel>=0.0.22
+python-lsp-server[all]
+pytest>=7.2.0
+pytest-cov>=2.11.1
+pytest-mock>=3.10.0
+debugpy>=1.6.7
+#+end_src
+
+#+begin_src shell
+pip install -r requirements.txt
+#+end_src
+
+#+begin_src shell
+pip install -r requirements-dev.txt
+#+end_src
